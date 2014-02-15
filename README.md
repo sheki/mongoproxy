@@ -6,17 +6,21 @@ A proxy to better connection pool to MongoDB.
 #Build
 * Checkout the code.
 * Set the GOPATH to the checkout ROOT.
+
 <code>
 go get ./...
 </code>
+
 <code>
 go install ./mongoproxybin
 </code>
 
 #Test
+
 <code>
 go get -t ./...
 </code>
+
 <code>
 go test ./...
 </code>
