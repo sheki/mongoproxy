@@ -1,0 +1,6 @@
+pkg/
+*.test
+bin/
+src/github.com
+src/labix.org/
+src/launchpad.net/
