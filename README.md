@@ -1,7 +1,7 @@
 mongoproxy
 ==========
 
-A proxy to better connection pool to MongoDB.
+MongoDB has a limit of 20,000 connections per node. When you have a lot of App-server talking to Mongo you will hit this limit. This problem gets worse in Forked-enviroments like Ruby's Unicorn where every app node opens multiple non sharable connections. To solve this we run a mongoproxy in the middle which acts converts m incoming connections to n outgoing connections to mongo keeping (m > n).
 
 #Build
 * Checkout the code.
