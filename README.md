@@ -4,6 +4,7 @@ mongoproxy
 MongoDB has a limit of 20,000 connections per node. When you have a lot of App-server talking to Mongo you will hit this limit. This problem gets worse in Forked-enviroments like Ruby's Unicorn where every app node opens multiple non sharable connections. To solve this we run a mongoproxy in the middle which acts converts m incoming connections to n outgoing connections to mongo keeping (m > n).
 
 #Known Issues
+<b> Before using in production look at the below issues and see if you can live with them</b>
 * Mongo's [GetLastError](http://docs.mongodb.org/manual/reference/command/getLastError/) is local to the connection, the requests are made on, the proxy currently does not have any connection affinity and this breaks stuff.
 * Mongo ReplicaSet commands will return the original hosts and not the proxies in front of the host, this will cause the clients to talk to the actual mongo nodes and not proxies.
 
