@@ -4,7 +4,7 @@ import (
 	"flag"
 	"time"
 
-	"mongoproxy"
+	"github.com/sheki/mongoproxy"
 )
 
 var (

@@ -1,4 +1,3 @@
-// Package timeout allows for running functions with a timeout.
 package mongoproxy
 
 import (
