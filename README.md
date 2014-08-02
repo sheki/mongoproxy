@@ -1,3 +1,7 @@
+#This is not actively developed, We (parse.com) wrote a more robust proxy look at https://github.com/facebookgo/dvara
+## This served well as an early prototype.
+
+
 mongoproxy
 ==========
 
